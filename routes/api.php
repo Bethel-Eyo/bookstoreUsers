@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('users','UsersController@index');
-Route::get('user/{id}', 'UsersController@destroy');
+Route::delete('user/{id}', 'UsersController@destroy');
